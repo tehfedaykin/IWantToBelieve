@@ -4,29 +4,29 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="description"
-		content="Once I use the ControlContainer, my form life will change. Cause once you use the ControlContainer nested forms aren’t strange. No Rob Wormald is unproud of you, no Ward Bell acts ashamed. And all FormControls have to obey you when by the ControlContainer you’re acclaimed. And or this gift or this curse I have inside, maybe at last I’ll know why – when we are hand in hand, the ControlContainer and I.">
+		content="If you’re looking for ways to improve performance of your Angular applications, look no further than Scully. Scully is the JAMstack tool the Angular community has been craving to make pre-rendering and serving static pages a breeze, with a great supporting community and a variety of plugins to meet any application setups needs. This talk will teach you about JAMstack concepts and how to get started with Scully to make your Angular applications more performant today.">
 	<meta name="keywords"
 		content="Jennifer Wadella, software engineer, angular, ControlContainer, Angular form across routes, ControlContainer Angular example, ControlContainer ViewProvider">
-	<meta itemprop="name" content="The ControlContainer & I (and Tom Nook)">
+	<meta itemprop="name" content="I Want to Believe: Making Angular Apps More Performant with Scully">
 	<meta itemprop="description"
-		content="Once I use the ControlContainer, my form life will change. Cause once you use the ControlContainer nested forms aren’t strange. No Rob Wormald is unproud of you, no Ward Bell acts ashamed. And all FormControls have to obey you when by the ControlContainer you’re acclaimed. And or this gift or this curse I have inside, maybe at last I’ll know why – when we are hand in hand, the ControlContainer and I.">
+		content="If you’re looking for ways to improve performance of your Angular applications, look no further than Scully. Scully is the JAMstack tool the Angular community has been craving to make pre-rendering and serving static pages a breeze, with a great supporting community and a variety of plugins to meet any application setups needs. This talk will teach you about JAMstack concepts and how to get started with Scully to make your Angular applications more performant today.">
 	<meta itemprop="image" content="http://tehfedaykin.github.io/ControlContainer/img/cover.png">
-	<meta property="og:title" content="The ControlContainer & I (and Tom Nook)">
+	<meta property="og:title" content="I Want to Believe: Making Angular Apps More Performant with Scully">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="http://tehfedaykin.github.io/ControlContainer/img/cover.png">
 	<meta property="og:url" content="http://tehfedaykin.github.io/ControlContainer">
 	<meta property="og:description"
-		content="Once I use the ControlContainer, my form life will change. Cause once you use the ControlContainer nested forms aren’t strange. No Rob Wormald is unproud of you, no Ward Bell acts ashamed. And all FormControls have to obey you when by the ControlContainer you’re acclaimed. And or this gift or this curse I have inside, maybe at last I’ll know why – when we are hand in hand, the ControlContainer and I.">
+		content="If you’re looking for ways to improve performance of your Angular applications, look no further than Scully. Scully is the JAMstack tool the Angular community has been craving to make pre-rendering and serving static pages a breeze, with a great supporting community and a variety of plugins to meet any application setups needs. This talk will teach you about JAMstack concepts and how to get started with Scully to make your Angular applications more performant today.">
 	<meta property="twitter:card" content="summary">
-	<meta property="twitter:title" content="The ControlContainer & I (and Tom Nook)">
+	<meta property="twitter:title" content="I Want to Believe: Making Angular Apps More Performant with Scully">
 	<meta property="twitter:creator" content="@likeOMGitsFEDAY">
 	<meta property="twitter:image"
 		content="http://tehfedaykin.github.io/ControlContainer/img/cover.png">
 	<meta property="twitter:url" content="http://tehfedaykin.github.io/ControlContainer">
 	<meta property="twitter:description"
-		content="Once I use the ControlContainer, my form life will change. Cause once you use the ControlContainer nested forms aren’t strange. No Rob Wormald is unproud of you, no Ward Bell acts ashamed. And all FormControls have to obey you when by the ControlContainer you’re acclaimed. And or this gift or this curse I have inside, maybe at last I’ll know why – when we are hand in hand, the ControlContainer and I.">
+		content="If you’re looking for ways to improve performance of your Angular applications, look no further than Scully. Scully is the JAMstack tool the Angular community has been craving to make pre-rendering and serving static pages a breeze, with a great supporting community and a variety of plugins to meet any application setups needs. This talk will teach you about JAMstack concepts and how to get started with Scully to make your Angular applications more performant today.">
 
-		<title>The ControlContainer & I</title>
+		<title>I Want to Believe: Making Angular Apps More Performant with Scully</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/beige.css">
@@ -49,8 +49,9 @@
 		<div class="reveal">
 			<div class="slides">
 				<section id="title">
-					<h1>The ControlContainer & I <span class="smaller">( ...and Tom Nook)</span></h1>
-					<h3>Jennifer Wadella</h3>
+					<h1>{ I Want to Believe }</h1>
+					<p class="large">Making Angular Apps More <br />Performant with <span class="accent">Scully</span></p>
+					<h4><br />Jennifer Wadella</h4>
 				</section>
 				<section id="me">
 					<div class="speaker-title">
@@ -71,167 +72,222 @@
 					</ul>
 				</section>
 				<!--------------->
-				<section id="roughyear" data-background="img/2020.png" data-background-size="cover"></section>
-				<section id="nookfavor">
-					<h2>Nook Needs a Favor ...</h2>
-					<img src="img/tomnook.jpg" alt="Tom Nook" width="600">
+				<section id="without-their-permission">
+					<blockquote>
+						<p class="large">
+							"When all links are created equal, your ideas can win simply because people like them. 
+							The future of innovation will be made, not managed."
+					</p> 
+					<p><i>- Alexis Ohanian, Without Their Permission</i></p></blockquote>
 				</section>
-				<section id="island-pos">
-					<h3>Island Point of <span class="accent">Sale</span> System</h3>
-					<img src="img/pos.jpg" alt="Nook Point of Sale">
+				<section id="idea-find">
+					<ol>
+						<li class="fragment">Have an idea (code)<br /></li>
+						<li class="fragment">Help people find your idea (SEO)<br /></li>
+						<li class="fragment">Make people love your idea (performance)<br /></li>
+					</ol>
 				</section>
-				<section id="demo-app">
-					<h3>Demo App:</h3>
-					<p><a href="https://nookpos.web.app/NookPOS/">https://nookpos.web.app/NookPOS/</a></p>
+				<section id="j-a-m">
+					<h3>Achieve This With JAMstack</h3>
+					<p class="fragment"><u>JavaScript</u> - application functionality</p>
+					<p class="fragment"><u>APIs</u> - server side interactions</p>
+					<p class="fragment"><u>Markup</u> - statically served HTML files</p>
 				</section>
-				<section id="pos-requirements">
-					<h3>Requirements</h3>
+
+				<section id="jamstack-goals">
+					<h3>JAMstack Goals</h3>
 					<ul>
-						<li class="fragment">Show outstanding loans</li>
-						<li class="fragment">Create new loans</li>
-						<li class="fragment">Simple interface</li>
+						<li class="fragment">Better application performance</li>
+						<li class="fragment">Easier scaling</li>
+						<li class="fragment">Improved developer experience</li>
+						<li class="fragment">Heightened security</li>
 					</ul>
 				</section>
-				<section id="form-group" data-markdown="code/loan-structure.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+				<!-- <section id="jam-best-practices">
+					<h3>JAMstack best practices</h3>
+					<ul>
+						<li class="fragment">Application on CDN</li>
+						<li class="fragment">Everything in git</li>
+						<li class="fragment">Modern build tools in use</li>
+						<li class="fragment">Automated builds</li>
+						<li class="fragment">Atomic deploys</li>
+						<li class="fragment">Instant cache invalidation</li>
+					</ul>
+				</section> -->
+				<section id="performance">
+					<h3>Angular App Success Equation</h3><br />
+					<h4>Improved Searchability Over Competitors</h4>
+					<h4 class="underline">+ Delighting Users with Great Performance</h4>
+					<h4>= How Businesses Can Benefit Immediately</h4>
 				</section>
-				<section id="form-group" data-markdown="code/form-group.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+				<section id="what-is-scully">
+					<h3>Scully</h3>
+					<p>The JAMstack toolchain Angular devs have been <b>craving</b>.</p>
 				</section>
-				<section id="form-html" data-markdown="code/form-html.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+				<section id="current-app">
+					<h3>Demo App: <br />Animal Crossing Field Guide</h3>
+					<p><a href="https://animalcrossingfieldguide.web.app/">https://animalcrossingfieldguide.web.app/</a></p>
+					<p><a href="https://github.com/tehfedaykin/acnh-fieldguide">https://github.com/tehfedaykin/acnh-fieldguide</a></p>
+
 				</section>
-				<section id="iteration-one">
-					<img src="img/first-iteration-demo.gif" alt="gif of first iteration" width="800pxtom">
+				<section id="app-goals">
+					<h3>Goals:</h3>
+					<ul>
+						<li class="fragment">Improve performance by pre-rendering all application pages</li>
+						<li class="fragment">Improve SEO by adding custom meta data to pages</li>
+						<li class="fragment">Improve performance by caching API calls</li>
+					</ul>
 				</section>
-				<section id="tom-iteration-one">
-					<img src="img/tom-first-iteration.jpg" alt="Tom Nook reacts to first iteration">
-					<p class="fragment">"How about a multi-step loan application for simplicity?"</p>
+				<section id="goal-1">
+					<h2>Goal #1</h2>
+					<h3>Pre-render application pages</h3>
 				</section>
-				<section id="loan-pages">
-					<div class="fragment">
-						<h3>First Page</h3>
-						<ul>
-							<li>first name, last name, friend code, address</li>
-						</ul>
-					</div>
-					<div class="fragment">
-						<h3>Second Page</h3>
-						<ul>
-							<li>loan type & roof color</li>
-						</ul>
-					</div>
-					<div class="fragment">
-						<h3>Third Page</h3>
-						<ul>
-							<li>deposit + display remaining amount due</li>
-						</ul>
-					</div>
-					<div class="fragment">
-						<h3>Repeat address fields?</h3>
-					</div>
+				<section id="getting-started-with-scully">
+					<h3>Let's Get Started With Scully</h3>
 				</section>
-				<section id="form-html-1" data-markdown="code/form-html-1.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-				</section>
-				<section id="step-1-html" data-markdown="code/step-1-html.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-				</section>
-				<section id="error">
-					<h3>Yikes!</h3>
-					<img src="img/formcontrol-error.png" alt="Form Control error">
-					<p>"formControlName must be used with a parent formGroup directive."</p>
-				</section>
-				<section id="formcontroltogroup">
-					<h3>FormGroup <br />^<br />👀<br/>FormControlName </h3>
-				</section>
-				<section id="how-to-access">
-					<h3>How do We Access Our FormGroup?</h3>
-					<img src="img/sadvillager.gif" alt="Sad villager">
-				</section>
-				<section id="controlcontainer">
-					<h3>Angular's ControlContainer</h3>
-					<p class="fragment">A base class for directives that contain multiple registered instances of NgControl. Only used by the forms module.</p>
-				</section>
-				<section id="multiple-control-instances">
-					<p>A base class for directives that contain <span class="accent">multiple registered instances</span> of <span class="accent">NgControl</span>. Only used by the forms module.</p>
-				</section>
-				<section id="tldr">
-					<h3>tl;dr</h3>
-					<p>Helps us get a reference to our FormGroupDirective from a child component. </p>
-				</section>
-				<section id="number-of-ways">
-					<h3>We make our ControlContainer provider available to our components in a few different ways</h3>
-				</section>
-				<section id="way-1">
-					<h3>Option 1: Inject via <span class="accent">ViewProviders</span> in Child Components</h3>
-				</section>
-				<section id="controlcontainer-viewprovider" data-markdown="code/controlcontainer-viewprovider.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-				</section>
-				<section id="no-errors">
-					<h3>Yay, no errors!</h3>
-					<img src="img/happyvillager.gif" alt="Happy villager">
-					<!-- <p>Providing the ControlContainer class in the ViewProvider decorator makes the ControlContainer reference to our FormGroup, available to our child component view.</p> -->
+				<section id="install-scully" 
+					data-markdown="code/install-scully.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
 				</section>	
-				<section id="way-2">
-					<h3>Option 2: Inject via <span class="accent">Provider</span> in Parent Component</h3>
+				<section id="routes">
+					<h3>Make Sure Your Application Has Routes</h3>
+					<p>Scully uses the router to find pages to pre-render</p>
 				</section>
-				<section id="controlcontainer-provider" data-markdown="code/controlcontainer-provider.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+				<section id="ac-router" 
+					data-markdown="code/ac-router.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
 				</section>
-				<section id="what-if-need-programatic-access">
-					<h3>What if we need to access formControls programmatically?</h3>
+				<section id="ng-build" 
+					data-markdown="code/ng-build.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
 				</section>
-				<section id="controlcontainer-howtoget" data-markdown="code/controlcontainer-howtoget.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+				<section id="run-scully" 
+					data-markdown="code/run-scully.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
 				</section>
-				<section id="way-3">
-					<h3>Option 3: Inject via <span class="accent">Constructor</span> in Child Components</h3>
+				<section id="scully-default-routes" 
+					data-markdown="code/scully-default-routes.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
 				</section>
-				<section id="controlcontainer-component" data-markdown="code/controlcontainer-component.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-				</section>	
-				<section id="controlcontainer-html" data-markdown="code/controlcontainer-html.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+				<section id="serve-scully" 
+					data-markdown="code/serve-scully.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
 				</section>
-				<section id="controlcontainer-complex" data-markdown="code/controlcontainer-complex.md" data-separator="^\n\n\n"
-				data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
-			</section>	
+				<section id="skipped-routes" 
+					data-markdown="code/skipped-routes.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+				<section id="plugin-system">
+					<h3>Scully Plugin System</h3>
+					<p>The plugin system allows developers to provide specific instructions to Scully on how to pre-render the application.</p>
+					<p>There are router, render, and file handler plugin types, and several built-in utility plugins already available</p>
+				</section>
+				<section id="scully-router-plugin" 
+					data-markdown="code/scully-router-plugin.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+				<section id="route-config-interface" 
+					data-markdown="code/route-config-interface.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+				<section id="scully-json-plugin" 
+					data-markdown="code/scully-json-plugin.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+				<section id="dynamic-pages-rendered">
+					<h3>Tada!</h3>
+					<p>Static pages for all 391 villagers pre-rendered!</p>
+				</section>
+				<section id="plugin-community">
+					<h3>Community Plugins</h3>
+					<ul>
+						<li>minifyHtml - Render plugin - <a href="https://www.npmjs.com/package/scully-plugin-minify-html">link</a></li>
+						<li>disableAngular - Render plugin - <a href="https://www.npmjs.com/package/scully-plugin-disable-angular">link</a></li>
+						<li>toc - Render plugin<a href="https://www.npmjs.com/package/scully-plugin-toc">link</a></li>
+						<li>lazyImages - Render plugin <a href="https://www.npmjs.com/package/@notiz/scully-plugin-lazy-images">link</a></li>
+						<li>sitemap - Render plugin - <a href="https://www.npmjs.com/package/@gammastream/scully-plugin-sitemap">link</a></li>
+					</ul>
+				</section>
+				<section id="goal-2">
+					<h2>Goal #2</h2>
+					<h3>Add custom meta data to application pages</h3>
+				</section>
+				<section id="seo-magic">
+					<h3>Let's Make These Pages Searchable!</h3>
+				</section>
+				<section id="angular-seo" 
+					data-markdown="code/angular-seo.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+				<section id="already-searchable">
+					<h3>Tag Data Available on Static Pages</h3>
+					<p>Cool tool to check tags: <a href="https://metatags.io/">https://metatags.io/</a></p>
+				</section>
+				<section id="goal-3">
+					<h2>Goal #3</h2>
+					<h3>Cache API Calls</h3>
+				</section>
+				<section id="transfer-state" 
+					data-markdown="code/transfer-state.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+				<section id="example-service" 
+					data-markdown="code/example-service.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+				<section id="use-scully-transfer-state" 
+					data-markdown="code/use-scully-transfer-state.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+				<section id="dist-performance-3g">
+					<h2>Built App Performance</h2>
+					lighthouse scores
+				</section>
+
 			<section id="summary">
 				<h3>Summary</h3>
-				<p>Use the ControlContainer to give you access to your parent formGroup.</p>
+				<ul>
+					<li>Scully ROCKS for JAMstacking Angular</li>
+					<li>Generate static pages of your application</li>
+					<li>Generate pages from dynamic routes using plugins</li>
+					<li>Add SEO content using Meta and Title</li>
+					<li>Use useScullyTransferState to cache API calls</li>
+				</ul>
 			</section>
 			<section id="demo-app-2">
 				<h4>DEMO APP:</h4>
-				<p><a href="https://nookpos.web.app/NookPOS/">https://nookpos.web.app/NookPOS/</a></p>
+				<p><a href="https://animalcrossingfieldguide.web.app/">https://animalcrossingfieldguide.web.app/</a></p>
 				<h4>CODE HERE:</h4>
 				<p><a href="https://github.com/tehfedaykin/NookPOS">https://github.com/tehfedaykin/NookPOS</a></p>
-				<h4>SPECIAL THANKS:</h4>
-				<p>to <a href="https://twitter.com/mwarger">Mat Warger</a> for the API!</p>
+				<h4>ARTICLES:</h4>
+				<p><a href="https://dev.to/bitovi/why-you-should-be-using-transferstate-to-cache-your-api-calls-in-angular-3nn7">Why You Should Be Using TransferState (& Scully) to Cache Your API Calls in Angular</a></p>
+				<p><a href="https://dev.to/bitovi/server-side-rendering-dynamic-routes-in-angular-with-scully-6m8">Rendering Static Pages from Dynamic Routes in Angular with Scully</a></p>
 			</section>
-			<section id="controlcontainer-pros">
-				<h3>Now go crazy creating nested forms in all sorts of ways!</h3>
-				<img src="img/clappingvillager.gif" alt="Clapping Villager">
-			</section>
-			<section id="lets-be-friends">
-				<h3>Let's be friends!</h3>
-				<h4>SW-8534-5881-1506</h4>
-				<img src="img/friends.jpg" alt="Animal Crossing friends" width="700px">
-			</section>
-					<!----------------------------------------->
+			<!----------------------------------------->
 				<section id="questions">
 					<h2>Questions?</h2>
-					<p class="small"><br />Slides available at: <a href="https://tehfedaykin.github.io/ControlContainer/"
-						target="_blank">tehfedaykin.github.io/ControlContainer</a></p>
-					<img style="height:300px;margin: .5em 0;" class="plain" src="img/tarantula.gif" alt="Catching Tarantulas">
-					<p  class="small">Code here: <a href="https://github.com/tehfedaykin/NookPOS">https://github.com/tehfedaykin/NookPOS</a></p>
-					
+					<p class="small"><br />Slides available at: <a href="https://tehfedaykin.github.io/IWantToBelieve/"
+						target="_blank">tehfedaykin.github.io/IWantToBelieve</a></p>
+					<img style="height:300px;margin: .5em 0;" class="plain" src="img/tarantula.gif" alt="Catching Tarantulas">					
 				</section>
 			</div>
 		</div>
 		<div class="twitter-overlay">
-			<span>#ngconf2020</span><span>@likeOMGitsFEDAY</span> <span>SW-8534-5881-1506</span>
+			<span><a href="https://dev.to/likeomgitsfeday">dev.to/likeomgitsfeday</a></span><span>@likeOMGitsFEDAY</span> <span>SW-8534-5881-1506</span>
 		</div>
 
 		<script src="js/reveal.js"></script>

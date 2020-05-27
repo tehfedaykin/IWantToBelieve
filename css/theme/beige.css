@@ -4,12 +4,13 @@
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700italic,700italic);
+@import url(https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
   background-color: #919191;
-  background-image: url("../../img/sunsetbeach.jpg");
+  background-image: url("../../img/bg3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -17,7 +18,7 @@ body {
   background-color: #919191; }
 
 .reveal {
-  font-family: "Arvo", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 40px;
   font-weight: normal;
   color: #fff; }
@@ -48,7 +49,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #fff;
-  font-family: "Arvo", arial, serif;
+  font-family: "Muli", arial, serif;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: normal;
@@ -57,7 +58,7 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.55em; }
+  font-size: 2.45em; }
 
 .reveal h2 {
   font-size: 2.11em; }
@@ -75,6 +76,7 @@ body {
  * OTHER
  *********************************************/
 .reveal p {
+  font-size: 0.75em;
   margin: 20px 0;
   line-height: 1.3; }
 
@@ -96,6 +98,7 @@ body {
 .reveal dl,
 .reveal ul {
   display: inline-block;
+  font-size: 0.75em;
   text-align: left;
   margin: 0 0 .75em 1em; }
 
@@ -130,7 +133,9 @@ body {
   width: 70%;
   margin: 20px auto;
   padding: 5px;
+  font-weight: 300;
   font-style: italic;
+  font-size: 0.75em;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
 
@@ -281,11 +286,13 @@ body {
   display: block;
   width: 50%; }
   .twitter-overlay span {
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    color: #88DFFE;
+    font-family: "Muli", sans-serif;
+    color: #4fcd71;
     margin-right: 2.5%;
     float: right;
     font-size: 1.25em; }
+    .twitter-overlay span a {
+      color: #4fcd71; }
 
 .speaker-title {
   display: flex; }
@@ -310,14 +317,14 @@ body {
   font-size: 150% !important; }
 
 .accent {
-  color: #88DFFE !important;
+  color: #4fcd71 !important;
   font-weight: 700;
   text-shadow: 1px 1px 1px #333; }
 
 .accent2 {
   font-weight: 700;
   text-shadow: 1px 1px 1px #fff;
-  color: #88DFFE; }
+  color: #4fcd71; }
 
 .scaled {
   width: 50%; }
@@ -354,3 +361,8 @@ section.darkbg h1, section.darkbg h2, section.darkbg h3, section.darkbg p {
 section.darkbg a {
   color: #fff;
   text-decoration: underline; }
+
+.underline {
+  padding-bottom: .5em;
+  border-bottom: solid 3px #fff;
+  display: inline-block; }

@@ -14,6 +14,8 @@
 
 // Include theme-specific fonts
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700italic,700italic);
+@import url(https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap);
+
 
 
 // Override theme settings (see ../template/settings.scss)
@@ -27,8 +29,8 @@ $selectionBackgroundColor: rgba(79, 64, 28, 0.99);
 //$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
 $heading1TextShadow: 2px 2px 1px #000;
 
-$twitterColor: #88DFFE;
-$accentColor: #88DFFE;
+$twitterColor: rgb(79, 205, 113);
+$accentColor: rgb(79, 205, 113);
 // Background generator
 // @mixin bodyBackground() {
 // 	@include radial-gradient( rgba(247,242,211,1), rgba(255,255,255,1) );
@@ -36,7 +38,7 @@ $accentColor: #88DFFE;
 
 @mixin bodyBackground() {
 	background-color: $backgroundColor;
-  background-image: url("../../img/sunsetbeach.jpg");
+  background-image: url("../../img/bg3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top left;
