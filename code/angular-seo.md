@@ -5,6 +5,10 @@
 import { Meta, Title } from '@angular/platform-browser';
 
 ...
+import { Component, OnInit } from '@angular/core';
+
+...
+
 export class VillagerComponent implements OnInit {
   public villager$;
   constructor(
@@ -21,28 +25,14 @@ export class VillagerComponent implements OnInit {
       }),
       tap((villager: Villager) => {
         this.titleTagService.setTitle(villager.name['name-USen']);
-        this.metaTagService.updateTag(
-          { name: 'keywords', 
-            content: `Animal Crossing New Horizons ${villager.name['name-USen']}` 
-          },
-          'name="keywords"');
-        this.metaTagService.updateTag(
-          { name: 'title', 
-            content: `Animal Crossing New Horizons ${villager.name['name-USen']}` 
-          },
-          'name="title"');
-        this.metaTagService.updateTag(
-          { name: 'description', 
-            content: `${villager.name['name-USen']} is ${villager.personality}` 
-          },
-          'name="description"');
-        this.metaTagService.updateTag(
-          { itemProp: 'image', 
-          content: villager.imageUrl 
-          }, 'itemProp="image"');
+        this.metaTagService.updateTag({ name: 'keywords', content: `Animal Crossing New Horizons ${villager.name['name-USen']}` });
+        this.metaTagService.updateTag({ name: 'title', content: `Animal Crossing New Horizons ${villager.name['name-USen']}` });
+        this.metaTagService.updateTag({ name: 'description', content: `Information about Animal Crossing New Horizons villager ${villager.name['name-USen']}` });
+        this.metaTagService.updateTag({ itemProp: 'image', content: villager.imageUrl }, 'itemProp="image"');
       })
     )
   }
 
 }
+
 ```
