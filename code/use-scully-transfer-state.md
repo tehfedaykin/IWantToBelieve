@@ -11,7 +11,7 @@ constructor(
 ) { }
 
   getVillagers(): Observable<Villager[]> {
-    this.transferState.useScullyTransferState(
+    return this.transferState.useScullyTransferState(
       'villagers',
       this.http.get<Villager[]>('https://acnhapi.com/v1/villagers')
     )
