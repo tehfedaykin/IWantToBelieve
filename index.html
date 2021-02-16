@@ -26,7 +26,7 @@
 	<meta property="twitter:description"
 		content="If you’re looking for ways to improve performance of your Angular applications, look no further than Scully. Scully is the JAMstack tool the Angular community has been craving to make pre-rendering and serving static pages a breeze, with a great supporting community and a variety of plugins to meet any application setups needs. This talk will teach you about JAMstack concepts and how to get started with Scully to make your Angular applications more performant today.">
 
-		<title>I Want to Believe: Making Angular Apps More Performant with Scully</title>
+		<title>I Want to Believe: Making Angular Apps More Performnt with Scully</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/beige.css">
@@ -66,7 +66,8 @@
 						</div>
 					</div>
 					<ul class="small">
-						<li>Lead Angular Consultant at Bitovi</li>
+						<li>Director of Angular @ Bitovi</li>
+						<li>Angular GDE</li>
 						<li>Expert Tarantula Catcher</li>
 						<li>Fermentista</li>
 					</ul>
@@ -141,6 +142,12 @@
 				<section id="goal-1">
 					<h2>Goal #1</h2>
 					<h3>Pre-render application pages</h3>
+				</section>
+				<section id="app-demo">
+					<!-- <video controls="controls" width="800" height="600" LOOP="true" AUTOPLAY="true"
+       name="App Demo" src="img/app-demo.mov"></video> -->
+	   			<img class="plain" src="img/app-demo.gif" alt="ACNH Villagers App Demo">
+
 				</section>
 				<section id="getting-started-with-scully">
 					<h3>Let's Get Started With Scully</h3>
@@ -254,18 +261,47 @@
 					data-charset="iso-8859-15">
 				</section>
 				<section id="dist-performance-3g">
-					<h2>Built App Performance</h2>
-					<p>Let's look at mobile (slow 3G)</p>
+					<img class="plain" src="img/scullystats.png" alt="Scully stat comparison">
 				</section>
 
+			<section id="tips">
+				<section id="debugging-tips-tricks">
+					<h2>Debugging Tips & Tricks</h2>
+				</section>
+				<section id="clone-repo">
+					<h3>Clone the Scully repo</h3>
+					<p>Get quick access to interfaces & perform global searches for undocumented features <br />
+						ex. <a href="https://scully.io/docs/Reference/scully-api/utils/">https://scully.io/docs/Reference/scully-api/utils/</a> </p>
+				</section>
+				<section id="incremental-renders" 
+					data-markdown="code/incremental-renders.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+				<section id="scully-puppeteer">
+					<h3>Understand HOW Scully is Rendering</h3>
+					<p>Puppeteer > 👀 > dist/your-project-name</p>
+				</section>
+				<section id="show-browser" 
+					data-markdown="code/show-browser.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+				<section id="guess-parser" 
+					data-markdown="code/guess-parser.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" 
+					data-charset="iso-8859-15">
+				</section>
+			</section>	
 			<section id="summary">
 				<h3>Summary</h3>
 				<ul>
-					<li>Scully ROCKS for JAMstacking Angular</li>
-					<li>Generate static pages of your application</li>
-					<li>Generate pages from dynamic routes using plugins</li>
-					<li>Add SEO content using Meta and Title</li>
-					<li>Use useScullyTransferState to cache API calls</li>
+					<li class="fragment">Scully ROCKS for JAMstacking Angular</li>
+					<li class="fragment">Generate static pages of your application</li>
+					<li class="fragment">Generate pages from dynamic routes using plugins</li>
+					<li class="fragment">Add SEO content using Meta and Title</li>
+					<li class="fragment">Use useScullyTransferState to cache API calls</li>
+					<li class="fragment">Take Advantage of CLI arguments of Scully dependencies</li>
 				</ul>
 			</section>
 			<section id="demo-app-2">
@@ -276,6 +312,8 @@
 				<h4>ARTICLES:</h4>
 				<p><a href="https://dev.to/bitovi/why-you-should-be-using-transferstate-to-cache-your-api-calls-in-angular-3nn7">Why You Should Be Using TransferState (& Scully) to Cache Your API Calls in Angular</a></p>
 				<p><a href="https://dev.to/bitovi/server-side-rendering-dynamic-routes-in-angular-with-scully-6m8">Rendering Static Pages from Dynamic Routes in Angular with Scully</a></p>
+				<p><a href="https://dev.to/bitovi/useful-tips-for-debugging-with-scully-48l5">Useful Tips for Debugging with Scully</a></p>
+
 			</section>
 			<!----------------------------------------->
 				<section id="questions">

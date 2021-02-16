@@ -28,7 +28,7 @@ export class VillagerComponent implements OnInit {
         this.metaTagService.updateTag({ name: 'keywords', content: `Animal Crossing New Horizons ${villager.name['name-USen']}` });
         this.metaTagService.updateTag({ name: 'title', content: `Animal Crossing New Horizons ${villager.name['name-USen']}` });
         this.metaTagService.updateTag({ name: 'description', content: `Information about Animal Crossing New Horizons villager ${villager.name['name-USen']}` });
-        this.metaTagService.updateTag({ itemProp: 'image', content: villager.imageUrl }, 'itemProp="image"');
+        this.metaTagService.updateTag({ itemProp: 'image', content: villager.imageUri }, 'itemProp="image"');
       })
     )
   }
